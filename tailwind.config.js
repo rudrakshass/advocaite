@@ -13,8 +13,8 @@ export default {
       'gugi' : ['Gugi','sans-serif']
     },
     colors: {
-      'background':'#222831',
-      'primary':'#11999E',
+      'background':'#0C0C0C',
+      'primary':'#9ABF80',
       'secondary':'#52616B',
       'lite':'#EEEEEE'
     },

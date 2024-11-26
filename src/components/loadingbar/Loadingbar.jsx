@@ -8,7 +8,7 @@ export default function Loadingbar(){
             <div className="m-0 flex place-items-center justify-center min-h-screen flex-col">
             <motion.h1 drag whileDrag={{scale:1.2}} className='font- text-10xl subpixel-antialiased font-black text-primary font-gugi'>A</motion.h1>
             <BarLoader
-                color="#0E8388"
+                color="#9ABF80"
                 cssOverride={{}}
                 loading
                 speedMultiplier={1}
