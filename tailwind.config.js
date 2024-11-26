@@ -13,9 +13,9 @@ export default {
       'gugi' : ['Gugi','sans-serif']
     },
     colors: {
-      'background':'#0C0C0C',
-      'primary':'#9ABF80',
-      'secondary':'#52616B',
+      'background':'#2D2D2D',
+      'primary':'#014F43',
+      'secondary':'#171717',
       'lite':'#EEEEEE'
     },
     extend: {

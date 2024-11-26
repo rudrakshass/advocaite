@@ -41,17 +41,17 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex z-0 px-5 h-16 justify-between items-center mx-auto bg-secondary">
+      <nav className="flex z-0 px-5 h-16 justify-between items-center mx-auto">
         <div className="text-xl font-gugi text-primary md:text-3xl text-left">
           Advoc<span className="text-gray-400">AI</span>te
         </div>
         <motion.div id="navbar" ref={scope}>
           <motion.ul
-            className="hidden transition-all duration-500 fixed overflow-hidden -z-50 h-[80%] w-[12%] top-[15%] -translate-y-1/2 right-5 rounded-lg bg-secondary flex-col text-center uppercase font-extrabold items-center text-lite text-xl md:flex"
+            className="hidden transition-all duration-500 fixed overflow-hidden w-[12%] -z-50 h-screen top-0 right-0 bg-secondary flex-col text-center uppercase font-extrabold items-center text-lite text-xl md:flex"
           >
             <motion.li
               whileTap={{ scale: 0.5 }}
-              className="mt-5 py-3 w-[90%] rounded-lg hover:bg-[#1a1f22] transition-all"
+              className="mt-16 py-3 w-[90%] rounded-lg hover:bg-[#1a1f22] transition-all"
             >
               <a href="#">Chat</a>
             </motion.li>
@@ -75,9 +75,9 @@ export default function Navbar() {
             </motion.li>
             <motion.li
               whileTap={{ scale: 0.5 }}
-              className="flex w-[90%] justify-center py-3 rounded-lg mt-[31rem] bg-[#363d40] hover:bg-[#1a1f22]  transition-all"
+              className="flex w-[90%] justify-center py-3 rounded-lg mt-[41rem] bg-[#363d40] hover:bg-[#1a1f22]  transition-all"
             >
-              <a href="#">Sign Up</a>
+              <a href="#">Sign In</a>
             </motion.li>
           </motion.ul>
         </motion.div>
@@ -104,6 +104,25 @@ export default function Navbar() {
           </svg>
         </motion.button>
       </nav>
+      <div className={`${isMenuOpen? "max-h-screen opacity-100" : "max-h-0 opacity-0" } transition-opacity duration-500 fixed`} id="navbar-hamburger">
+            <ul className="absolute rounded-ee w-screen bg-secondary flex flex-col text-center uppercase font-extrabold md:hidden">
+                <li>
+                <a href="#" className="block py-2 px-3 text-white bg-primary rounded dark:bg-primary" aria-current="page">Chat</a>
+                </li>
+                <li>
+                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Law Logs</a>
+                </li>
+                <li>
+                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Lawyer Finder</a>
+                </li>
+                <li>
+                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Virtual Court</a>
+                </li>
+                <li>
+                <a href="#" className="block py-2 px-3 text-gray-900 rounded bg-[#257180] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">SignUp</a>
+                </li>
+            </ul>
+        </div>
     </>
   );
 }
