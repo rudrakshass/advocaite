@@ -13,10 +13,10 @@ export default {
       'gugi' : ['Gugi','sans-serif']
     },
     colors: {
-      'background':'#0C0C0C',
-      'primary':'#0E8388',
-      'secondary':'#153334',
-      'lite':'#CBE4DE'
+      'background':'#222831',
+      'primary':'#11999E',
+      'secondary':'#52616B',
+      'lite':'#EEEEEE'
     },
     extend: {
       fontSize: {
