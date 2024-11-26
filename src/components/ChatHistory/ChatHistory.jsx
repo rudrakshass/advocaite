@@ -4,7 +4,6 @@ function ChatHistory() {
   return (
     <div id="chathist">
       <ul className="w-[12%] hidden fixed overflow-hidden z-1 h-screen top-[6%] left-0 rounded-ee bg-secondary flex-col uppercase font-extrabold text-lite text-sm md:flex">
-        <button className='flex w-[90%] justify-center mt-5 py-3 rounded-lg hover:bg-[#06292b]'>New Chat</button>
         <li className='mt-5 ml-3'>
           Today
           {/* <ul className={`w-[12%] hidden transition-all duration-500 fixed overflow-hidden z-1 h-screen top-[6%] left-0 rounded-ee bg-secondary flex-col text-center uppercase font-extrabold items-center text-lite text-xl md:flex`}> 
